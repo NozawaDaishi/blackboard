@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue.js</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="//cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="main">
+        <div class="sidebar">サイドバー</div>
+        <div class="content">
+          <header>
+            <a>戻る</a>
+            <p>黒板メニュー作成</p>
+          </header>
+          <hr />
+          <div class="flex-content">
+            <div class="blackboard">
+              <form action="" method="POST">
+                <textarea name="message" id="editor"></textarea>
+              </form>
+              <!-- <ckeditor
+                :editor="editor"
+                v-model="editorData"
+                :config="editorConfig"
+              ></ckeditor> -->
+              <!-- <ckeditor
+                name="content"
+                :editor-url="editorUrl"
+                :config="editorConfig"
+                v-model="content"
+              ></ckeditor> -->
+              <!-- <ckeditor
+                name="content"
+                :config="editorConfig"
+                v-model="content"
+              ></ckeditor> -->
+            </div>
+            <div class="flex-box">
+              <button class="flex-item btn" v-on:click="openModal">
+                <span>背景選択</span>
+              </button>
+              <button class="flex-item btn">
+                <span>テンプレート</span>
+              </button>
+              <button class="flex-item save-btn">
+                <span>保存</span>
+              </button>
+            </div>
+          </div>
+          <button class="confirm-btn">
+            <span>確認する</span>
+          </button>
+        </div>
+      </div>
+      <!-- <div id="overlay" v-show="showContent">
+        <div id="modal">
+          <header>
+            <p>背景画像選択</p>
+            <div v-on:click="closeModal" class="close-btn">
+              <i class="fas fa-times fa-lg"></i>
+            </div>
+          </header>
+          <hr />
+          <div class="flex-content">
+            <div class="flex-box"></div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+    <!-- <script src="../node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script>
+    <script src="../node_modules/@ckeditor/ckeditor5-vue/dist/ckeditor.js"></script> -->
+    <script src="../js/blackboard.js"></script>
+  </body>
+</html>

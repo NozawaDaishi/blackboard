@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "ckeditor4-vue": "^2.2.1"
+  }
+}

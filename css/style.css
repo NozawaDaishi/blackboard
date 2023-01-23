@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Hina+Mincho&family=La+Belle+Aurore&family=Shadows+Into+Light&family=Yomogi&family=Yuji+Syuku&family=Zen+Kurenaido&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.blackboard {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #012111;
+  /* background-color: #333;
+  background-color: #c0c0c0; */
+  color: white;
+  font-family: "Yomogi", cursive;
+  /* font-family: "Caveat", cursive;
+  font-family: "Dancing Script", cursive;
+  font-family: "Hina Mincho", serif;
+  font-family: "La Belle Aurore", cursive;
+  font-family: "Shadows Into Light", cursive;
+  font-family: "Yuji Syuku", serif;
+  font-family: "Zen Kurenaido", sans-serif; */
+}
+.title {
+  position: absolute;
+  top: 1.5em;
+  left: 3.5em;
+}
+
+.flex-content {
+  width: 100%;
+  position: absolute;
+  top: 15em;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.menu dl {
+  display: table;
+  width: 100%;
+  /* border: solid #e4e4e4; */
+  border-width: 1px 0;
+}
+.menu dt {
+  display: table-cell;
+  padding: 0.4rem;
+}
+.menu dd {
+  text-align: right;
+  display: table-cell;
+  padding: 0.4rem;
+}
+.menu dd:after {
+  display: inline-block;
+  content: "";
+  width: 1em;
+  font-size: 0.7em;
+}
+.menu dd.from:after {
+  content: "〜";
+}
+.notes {
+  font-size: 0.7rem;
+  font-family: "Yu Mincho", "YuMincho";
+}
+/* 
+.flex-food {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-drink {
+  justify-content: center;
+  align-items: center;
+} */
